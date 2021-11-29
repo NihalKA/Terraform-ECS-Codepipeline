@@ -1,0 +1,29 @@
+[
+    {
+        "name": "bloom-prod-django-task",
+       "image": "710653795817.dkr.ecr.ap-south-1.amazonaws.com/django-ledger-prod:latest", 
+        "memory": 350,
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+            "awslogs-group": "bloom-prod-django",
+            "awslogs-region": "ap-south-1",
+            "awslogs-stream-prefix": "ecs"
+          }
+        },
+        "links": [],
+        "portMappings": [
+            { 
+                "hostPort": 0,
+                "containerPort": 8000,
+                "protocol": "tcp"
+            }
+        ],
+        "essential": true,
+        "entryPoint": [],
+        "command": [],
+        "environment": [],
+        "mountPoints": [],
+        "volumesFrom": []
+    }
+    ]

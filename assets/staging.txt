@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "ECS_CLUSTER=sample-cluster-staging" >>  /etc/ecs/ecs.config
+echo "ECS_ENABLE_SPOT_INSTANCE_DRAINING=true" >>  /etc/ecs/ecs.config
+echo "ECS_CONTAINER_STOP_TIMEOUT=120" >>  /etc/ecs/ecs.config
+echo "ECS_ENABLE_CONTAINER_METADATA=true" >>  /etc/ecs/ecs.config
